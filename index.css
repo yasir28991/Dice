@@ -1,0 +1,111 @@
+html, body {
+    background-image: url(dice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    height: 90vh;
+}
+
+.container {
+    background-image: linear-gradient(rgb(37, 70, 68), rgb(10, 70, 8));
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    color: rgb(47, 0, 255);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: chocolate;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.active {
+    border: 5px white solid;
+}
+
+#double {
+    align-self: flex-end;
+}
+
+button {
+   width: 140px;
+   height: 50px;
+   border: none;
+   font-weight: 900;
+   color: rgb(0, 0, 0);
+   font-size: medium;
+   border-radius: 5px;
+   cursor: pointer;
+   display: inline-block;
+   background-image: linear-gradient(rgba(196, 253, 39, 0.767), #ff1100);
+   /* margin-top: 50px; */
+   margin: 42px auto;
+}
+
+button:hover {
+    animation: anim 1s infinite;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#double {
+    width: 200px;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(30, 238, 238));
+}
+
+#double:hover {
+    animation: myanim 1s infinite;
+}
+
+#resetBtn {
+    display: none;
+}
+
+
+
+@keyframes anim {
+    0% {background-image: linear-gradient(90deg, #ff1100, rgba(196, 253, 39, 0.507));}
+
+    25% {background-image: linear-gradient(90deg, rgba(196, 253, 39, 0.767), #ff1100);}
+
+    50% {background-image: linear-gradient(90deg, #ff1100, rgba(196, 253, 39, 0.507));}
+
+    75% {background-image: linear-gradient(90deg, rgba(196, 253, 39, 0.767), #ff1100);}
+
+    100% {background-image: linear-gradient(90deg, #ff1100, rgba(196, 253, 39, 0.507));}
+}
+@keyframes myanim {
+    0% {background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(3, 228, 228));}
+
+    25% {background-image: linear-gradient(90deg, rgb(30, 238,  238,) , rgb(255, 255, 255));}
+
+    50% {background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(30, 238, 238));}
+
+    75% {background-image: linear-gradient(90deg, rgb(30, 238,  238,) , rgb(255, 255, 255));}
+
+    100% {background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(30, 238, 238));}
+}
